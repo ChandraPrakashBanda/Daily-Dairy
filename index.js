@@ -100,15 +100,16 @@ firebase.auth().onAuthStateChanged((user)=> {
       dateElement.value='';
       dailyDairyText.value='';
             timeElement.value='';
-});  
+}); 
+
 db.collection('Dairy').get().then((snapshot)=>{
    snapshot.docs.forEach(doc =>{
-     buildInterface(doc);
-     
-      
+     if(user.uid==doc.data().userId){
+     buildInterface(doc);  
+     }
    });
   });
-    
+
 
      
   }
