@@ -1,0 +1,64 @@
+<!doctype html>   
+    <html>
+        <head>
+            <title>Login page</title>
+            <link href="style.css" rel="stylesheet" type="text/css" >
+            
+        </head>
+        <body>
+          <div class="Main-content"> 
+                <button  id="SignIn">LOGIN</button> 
+            </div> 
+             <section id="firebaseui-auth-container"></section>
+           <form id="mainForm">
+             <div class="App">
+            <div class="nav-bar">
+       
+              <div class="nav-bar-left-side">
+                <div class="title">
+                  <h1 class="nav-bar-text">Diary</h1>
+                </div>
+              </div>
+      
+      
+            </div>
+            <div class="web-body">
+                  <div class="web-body-topbar">
+                        <div class="web-bar-topbar-left">
+                              <div class="date">
+                                   <input type="date" id="date" style=" height:70px; width:300px;">       
+                              </div>
+                        </div>
+                        <div class="web-bar-topbar-left">
+                              <div class="day">
+                                 <input type="text" id="text" style = "height:70px ;width:300px">         
+                              </div>
+                        </div>
+                  </div>
+                  <div class="web-body-main">
+                        <div class="class">
+                              <input type="text" name="description" id="maintext" style="height:750px; width:1200px;">
+                        </div>
+                  </div>
+                  <div class="web-body-bottombar">
+                        <div class="submit">
+                          <button id="submit"  style="height: 70px;width:300px ;" text="SUBMIT" >SUBMIT</button>
+                        </div>
+                  </div>
+                  <div class="web-body-link">
+                        <div class="previous">
+                              <a href="main.html"><button id="myEntries"  style="height: 70px;width:300px ;" text="SUBMIT" >My Dairy Entries</button></a>
+                        </div>
+                  </div>
+            </div>  
+        </div>
+
+      </form>
+      <div class="Entries" id="previous">
+        <ul id ="entriesList"> 
+          </ul> 
+       
+      </div>
+            <script src="index.js"></script>  
+          </body>
+    </html>
