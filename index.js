@@ -40,9 +40,9 @@ function buildInterface(doc){
     let deleteButton = document.createElement('button');
     deleteButton.textContent='x';
     mainText.textContent=doc.data().dailyDairy;
-    dateElement.textContent=doc.data().Date;
+    
     li.appendChild(mainText);
-    li.appendChild(dateElement);
+    
     li.appendChild(deleteButton);
     
     entriesListInterface.appendChild(li);

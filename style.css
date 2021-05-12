@@ -157,3 +157,15 @@
       height: 40px;
       width: 70px;
 }
+@entriesList{
+    background-color: blue;
+    height: 25%;
+    width: 25%;
+
+}
+.Entries li{
+  background-color: wheat;
+  
+  text-emphasis-color: black;
+  font-size: 45px;
+}
